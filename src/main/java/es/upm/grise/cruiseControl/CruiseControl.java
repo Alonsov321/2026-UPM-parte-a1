@@ -13,7 +13,6 @@ public class CruiseControl {
 	
 	public CruiseControl(Speedometer speedometer) {
 	
-	// enabled = true
 	speedLimit = null;
 	speedSet = null;
 	
