@@ -1,5 +1,5 @@
 package es.upm.grise.cruiseControl;
-import java.io.IOException; 
+import ./exceptions.*; 
 
 public class CruiseControl {
 	
@@ -9,30 +9,6 @@ public class CruiseControl {
 	private Integer speedSet;
 	private boolean enabled = false;
 	
-	 public static class IncorrectSpeedSetException extends RuntimeException {
-        public IncorrectSpeedSetException(String mensaje) {
-            super(mensaje);
-        	}
-   	 }
-    
-     public static class SpeedSetAboveSpeedLimitException extends RuntimeException {
-        public SpeedSetAboveSpeedLimitException(String mensaje) {
-            super(mensaje);
-      	  }
-    	}
-
-
- 	public static class IncorrectSpeedLimitException extends RuntimeException {
-        public IncorrectSpeedLimitException(String mensaje) {
-            super(mensaje);
-      	  }
-    	}
-    	
-    	public static class CannotSetSpeedLimitException extends RuntimeException {
-        public CannotSetSpeedLimitException(String mensaje) {
-            super(mensaje);
-      	  }
-    	}
 
 	
 	public CruiseControl(Speedometer speedometer) {
